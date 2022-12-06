@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Pacifico", cursive;
 }
 
 html {
@@ -11,16 +12,22 @@ html {
 
 body {
   height: 100%;
+  background: linear-gradient(45deg, #a7cfdf 0%, #23538a 100%);
+  overflow: hidden;
 }
 
-header {
-  width: 100%;
+header h2 {
+  color: wheat;
+  font-size: 3.5rem;
+  text-align: center;
+  position: relative;
+  top: 50px;
+  text-decoration: underline;
 }
 
-main {
+.game {
   height: 100%;
   width: 100%;
-  background: linear-gradient(45deg, #a7cfdf 0%, #23538a 100%);
   display: flex;
   align-items: center;
 }
@@ -45,53 +52,64 @@ main {
   background-color: white;
 }
 
-.vs {
-  width: 70px;
-  height: 70px;
-  align-self: center;
-  background-color: #2e315a;
-  border-radius: 50%;
-  border: 3px solid white;
+.regras {
+  background-color: white;
+  width: 100%;
+  max-width: 195px;
+  height: 393px;
+  position: relative;
+  bottom: 90px;
+  background-image: url(../Imagens/regras.png);
+  background-size: cover;
+  background-color: transparent;
+}
+
+.buttons {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
 }
 
-.vs p {
-  font-size: 2.7rem;
-  color: white;
-}
-
-.buttons,
 .buttons2 {
   display: flex;
   flex-direction: column;
 }
+
 .buttons button {
-  width: 100%;
+  width: 70px;
   max-width: 70px;
   height: 70px;
-  margin: 10px 80px;
+  margin: 10px 5px;
+  padding: 0 2%;
   border-radius: 50%;
   cursor: pointer;
   border: white 3px solid;
-  background-size: contain;
+  background-size: cover;
+  transition: 0.5s;
+}
+
+.buttons button:hover,
+.buttons2 button:hover {
+  scale: 0.95;
 }
 
 .buttons2 button {
   width: 70px;
   height: 70px;
-  margin: 10px 80px;
+  margin: 10px 5px;
+  padding: 0 2%;
   border-radius: 50%;
   border: white 3px solid;
   cursor: pointer;
   background-size: contain;
+  transition: 0.5s;
 }
 
 .player1 {
-  background-size: contain;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 .cpu {
-  background-size: contain;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }

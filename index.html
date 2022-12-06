@@ -5,11 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
     <title>Tbbt - Joken pô</title>
   </head>
   <body>
-    <header class="container"></header>
-    <main>
+    <header>
+      <h2>Tbbt - Jokenpô</h2>
+    </header>
+    <section class="game">
       <section class="buttons">
         <button
           style="background-image: url(imagens/rock.png)"
@@ -35,9 +41,7 @@
 
       <section class="field container">
         <div class="player1 box"></div>
-        <div class="vs">
-          <p>Vs</p>
-        </div>
+        <div class="regras"></div>
         <div class="cpu box"></div>
       </section>
 
@@ -63,7 +67,9 @@
           class="spock"
         ></button>
       </section>
-    </main>
+      <!--buttons-->
+    </section>
+    <!--game-->
 
     <script src="js/script.js"></script>
   </body>
