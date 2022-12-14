@@ -128,9 +128,22 @@ header h2 {
 .player1 {
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.gate.on {
+  height: 100%;
+  width: 100%;
+  background-color: #a7cfdf;
+  border-radius: 50%;
+  bottom: 200px;
+  transition: 0.5s;
 }
 
 .cpu {
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  transition: 0.5s;
+  overflow: hidden;
 }
