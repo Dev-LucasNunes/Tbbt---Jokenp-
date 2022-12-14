@@ -15,6 +15,10 @@ body {
   background: linear-gradient(45deg, #a7cfdf 0%, #23538a 100%);
   overflow: hidden;
 }
+header {
+  background-color: black;
+  height: 0px;
+}
 
 header h2 {
   color: wheat;
@@ -49,7 +53,7 @@ header h2 {
   height: 200px;
   border-radius: 50%;
   border: 3px solid white;
-  background-color: white;
+  background-color: #a7cfdf;
 }
 
 .regras {
@@ -62,6 +66,23 @@ header h2 {
   background-image: url(../Imagens/regras.png);
   background-size: cover;
   background-color: transparent;
+}
+
+.check {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: white;
+  margin: 0 auto;
+  position: relative;
+  bottom: 90px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  background-color: #a7cfdf;
+  border: 3px solid white;
 }
 
 .buttons {
