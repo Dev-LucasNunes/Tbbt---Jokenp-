@@ -163,3 +163,23 @@ header h2 {
   }
 }
 
+@media screen and (max-width: 580px) {
+  .container {
+    max-width: 580px;
+  }
+
+  .box {
+    width: 70px;
+    height: 70px;
+    position: relative;
+    top: 65px;
+  }
+
+  .regras {
+    width: 100%;
+    max-width: 170px;
+    height: 330px;
+  }
+}
+
+
