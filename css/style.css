@@ -147,3 +147,19 @@ header h2 {
   transition: 0.5s;
   overflow: hidden;
 }
+
+/****responsivo****/
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .box {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 50px;
+  }
+}
+
